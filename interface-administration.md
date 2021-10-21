@@ -94,7 +94,7 @@ Ici, on utilise la fonction `reverse` pour récupérer l'URL de l'article de fa�
 
 ## Filtrer les instances
 
-Pour rajouter des options de filtres basiques sur les pages d'administration, on peut utiliser les attributs `search_fields` (pour faire une recherche textuelle sur un champ) et `list_filter` (pour filtrer sur la valeur des chamos définis) :
+Pour rajouter des options de filtres basiques sur les pages d'administration, on peut utiliser les attributs `search_fields` (pour faire une recherche textuelle sur un champ) et `list_filter` (pour filtrer sur la valeur des champs définis) :
 
 ```python
 from django.contrib import admin
