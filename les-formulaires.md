@@ -150,7 +150,7 @@ def signup(request):
     return render(request, 'signup.html', context={"form": form})
 ```
 
-Si on souhaite uniquement récupérer le modèle à partir du formulaire sans sauvegarder celui-ci dans la base de données (pour par exemple modifier un champ avant de le sauvegarder) on peut utiliser la paramètre `commit` et sauvegarder directement l'instance avec la méthode `save` (sur l'instance) :
+Si on souhaite uniquement récupérer le modèle à partir du formulaire sans sauvegarder celui-ci dans la base de données (pour par exemple modifier un champ avant de le sauvegarder) on peut utiliser le paramètre `commit` et sauvegarder directement l'instance avec la méthode `save` (sur l'instance) :
 ```python
 from blog.forms import SignupForm
 
