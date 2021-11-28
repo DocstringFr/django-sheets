@@ -31,7 +31,7 @@ Attention d'utiliser des guillemets simples pour entourer le chemin relatif vers
 
 Il est possible d'indiquer à Django des dossiers en dehors d'une application qui contiennent des fichiers statiques.
 
-Vous pouvez créer une liste `STATICFILES_DIR` dans le fichier `settings.py` avec des chemins de dossier.
+Vous pouvez créer une liste `STATICFILES_DIRS` dans le fichier `settings.py` avec des chemins de dossier.
 
 Pour garder le caractère dynamique des chemins, il est conseillé de concaténer les chemins à partir de la variable `BASE_DIR` définie au tout début du fichier fichier `settings.py`.
 
