@@ -61,7 +61,7 @@ from django.http import HttpResponse, Http404
 def home(request):
     try:
         post = BlogPost.objects.get(title="Un super article")
-    except:
+    except BlogPost.DoesNotExist:
         raise Http404("L'article n'existe pas...")
     
     return HttpResponse(post.content)
@@ -105,7 +105,7 @@ from django.http import HttpResponse, Http404
 def home(request):
     try:
         post = BlogPost.objects.get(title="Un super article")
-    except:
+    except BlogPost.DoesNotExist:
         raise Http404("L'article n'existe pas...")
     
     return HttpResponse(post.content)
