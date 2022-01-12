@@ -53,7 +53,7 @@ Dans le fichier `signup.html` :
      <title>Inscription</title>
 </head>
 <body>
-    <form method="POST"">
+    <form method="POST">
         {% csrf_token %}
         {{ form }}
         <input type="submit" value="S'inscrire">
