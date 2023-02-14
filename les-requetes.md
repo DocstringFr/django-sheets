@@ -80,7 +80,7 @@ Récupérer tous les articles qui contiennent le mot Python (insensible à la ca
 BlogPost.objects.filter(name__icontains="Python")
 ```
 
-Récupérer tous les articles qui comment par le mot Python (sensible à la casse) :
+Récupérer tous les articles qui commencent par le mot Python (sensible à la casse) :
 ```python
 BlogPost.objects.filter(name__startswith="Python")
 ```
